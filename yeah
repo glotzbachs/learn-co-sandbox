@@ -1,0 +1,16 @@
+musicbycity={
+  :manchester =>[
+    {
+      :bandname => "Smiths",
+      :names=> ["Morrissey","Johnny","Andy","Mike"]
+    },
+    { 
+      :bandname=>"Joy Division",
+      :names=>["Peter","Stephen","Bernard","Ian"]
+    },
+  ]
+}
+
+musicbycity[:manchester][0][:bandname]
+
+puts "There were #{musicbycity[:manchester][0][:names].length} members in #{musicbycity[:manchester][0][:bandname]}"
